@@ -42,7 +42,7 @@ export async function assumeRole(params: GetTokenParams) {
 
   const client = new HttpClient("github-app-token");
 
-  info(`====> Ringing OIDC Provider...`);
+  info(`====> Ringing OIDC Provider...  🤙`);
   try {
     const respToken = await client.postJson<ResponseHeader>(
       params.providerEndpoint,
@@ -50,7 +50,7 @@ export async function assumeRole(params: GetTokenParams) {
       payload_headers,
     );
 
-    info(`====> OIDC Token get.`);
+    info(`====> OIDC Token get. See you Provider Endpoint ☎️`);
     info(`====> Configuration Secrets...`);
 
     setSecret(String(respToken.result?.token));
