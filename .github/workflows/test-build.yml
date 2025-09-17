@@ -46,3 +46,19 @@ jobs:
             route: GET /installation/repositories
         
         - run: echo '${{ steps.get-repository.outputs.data }}'
+
+        - name: Commit Test
+          env: 
+            GH_TOKEN: ${{ steps.test.outputs.token }}
+          run: |
+            gh auth setup-git
+            git config user.name ${{ steps.test.outputs.app_slug }}
+            git config user.email ${{ steps.test.outputs.commitemail }}
+
+            git clone https://github.com/atolycs/empty-commit-test.git
+
+            cd empty-commit-test
+
+            git commit --allow-empty -m "feat: commit user test! ${{ github.workflow_sha }}"
+
+            git push 
