@@ -4,7 +4,9 @@
   "description": "Github Action Create Github Access from Apps with OIDC",
   "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "biome:format": "biome check --write .",
+    "build": "$npm_execpath run biome:format && node ./scripts/build.mjs"
   },
   "keywords": [],
   "author": "Atolycs",

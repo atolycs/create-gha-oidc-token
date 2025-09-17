@@ -15,9 +15,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
 
-    "types": [
-      "atolycs-types"
-    ]
+    "types": ["atolycs-types"]
   },
   "include": ["./src/**/*.ts"],
   "exclude": ["node_modules"]
