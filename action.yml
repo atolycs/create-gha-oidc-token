@@ -1,0 +1,29 @@
+description: Login GitHub for GitHub App via Custom OIDC Provider
+
+inputs:
+  provider-endpoint:
+    description: OIDC Provider Endpoint URL
+    default: http://localhost:8080
+    required: false
+  app-id:
+    description: Authentication GitHub App ID
+    default: hogefuga
+    required: false
+  repositories:
+    description: Get Installation ID Repository
+    default: []
+    required: false
+  
+outputs:
+   token:
+     description: GitHub Access Token
+   app_slug:
+     description: App Slug
+   commitemail:
+     description: commit Only Email Address
+
+runs:
+  using: node22
+  main: dist/main.js
+  post: dist/post.js
+  post-if: always()

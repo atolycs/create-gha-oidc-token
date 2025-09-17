@@ -37,3 +37,5 @@ function parseRepository(repo: string): string[] {
 
   return repo.split(/\s+/);
 }
+
+run();
