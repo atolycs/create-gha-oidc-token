@@ -20,7 +20,6 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "atolycs-types": "file:../atolycs-types"
+    "@actions/core": "^1.11.1"
   }
 }
