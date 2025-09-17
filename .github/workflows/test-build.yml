@@ -30,7 +30,7 @@ jobs:
           uses: ./
           id: test
           with: 
-            provider-endpoint: ${{ vars.Endpoint }}
+            provider-endpoint: ${{ vars.PROVIDER_ENDPOINT }}
             app-id: ${{ vars.APP_ID }}
         
         - name: Token available
