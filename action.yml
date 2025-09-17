@@ -23,7 +23,7 @@ outputs:
      description: commit Only Email Address
 
 runs:
-  using: node22
+  using: node24
   main: dist/main.js
   post: dist/post.js
   post-if: always()
