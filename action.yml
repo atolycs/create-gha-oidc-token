@@ -10,8 +10,7 @@ inputs:
     default: hogefuga
     required: false
   repositories:
-    description: Get Installation ID Repository
-    default: []
+    description: Get Installation ID Repository List
     required: false
   
 outputs:
