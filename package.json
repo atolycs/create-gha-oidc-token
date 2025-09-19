@@ -14,6 +14,7 @@
   "devDependencies": {
     "@actions/http-client": "^2.2.3",
     "@atolycs/biome-config": "^0.2.5",
+    "@github/local-action": "^6.0.0",
     "@types/node": "^24.5.1",
     "esbuild": "^0.25.9",
     "glob": "^11.0.3",
