@@ -22,11 +22,12 @@ export async function assumeRole(params: GetTokenParams) {
   const payload_headers: RequestHeader = {};
 
   if (!isIdTokenAvailable()) {
-    error(`
+    setFailed(`
       OIDC Provider is not available.
       Please enable it.
       https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect
     `);
+    return 1;
   }
   info(`====> Fetching OIDC Token... 🔑`);
   // debug(`Fetch ACTIONS_ID_TOKEN_REQUEST_URL`)
