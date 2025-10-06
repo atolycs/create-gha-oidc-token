@@ -18,7 +18,7 @@
     "@types/node": "^24.5.1",
     "esbuild": "^0.25.9",
     "glob": "^11.0.3",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@actions/core": "^1.11.1"
