@@ -12,7 +12,7 @@
   "author": "Atolycs",
   "license": "MIT",
   "devDependencies": {
-    "@actions/http-client": "^2.2.3",
+    "@actions/http-client": "^3.0.0",
     "@atolycs/biome-config": "^0.2.5",
     "@github/local-action": "^6.0.0",
     "@types/node": "^24.5.1",
